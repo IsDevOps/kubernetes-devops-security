@@ -46,7 +46,7 @@ public class NumericController {
 			ResponseEntity<String> responseEntity = restTemplate.getForEntity(baseURL + '/' + value, String.class);
 			String response = responseEntity.getBody();
 			logger.info("Value Received in Request - " + value);
-			logger.info("Node Service Response - " + response);
+			logger.info("Node Service Responses - " + response);
 			return Integer.parseInt(response);
 		}
 	}
